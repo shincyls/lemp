@@ -1,9 +1,9 @@
 <?php
-
+	include ('secret.php');
 	$system_hostname = gethostname();
 	$hostname='localhost';
-	$dbpwd='LiVe$$2023';
-	$dbusr='app2dev';
+	$dbpwd=$secretpwd;
+	$dbusr=$secretusr;
 	$server_name = gethostname();
 	$dbname='app_main';
 	$con = mysqli_connect ($hostname,$dbusr,$dbpwd,$dbname);
